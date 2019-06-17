@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <Title>Rezervasyon</Title>
+</head>
+
+<body>
+    <form action="Rezervasyon.php" method="POST">
+        <fieldset style="width: 300px">
+            <legend>Rezervasyon Bilgileri</legend>
+            <table>
+                <tr>
+                <td>Destination : </td>
+                <td>
+                    <input type="text" name="destination"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <hr />
+                    </td>
+                </tr>
+                <tr>
+                <tr>
+                    <td>İsim : </td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>Soyisim : </td>
+                    <td><input type="text" name="surname"></td>
+                </tr>
+                <tr>
+                    <td>E-Posta : </td>
+                    <td><input type="text" name="mail"></td>
+                </tr>
+                <tr>
+                    <td>Yetişkin : (12+) </td>
+                    <td>
+                        <select name="yetiskin" id="">
+                            <option value="0" name="sıfır" selected>0</option>
+                            <option value="1" name="bir">1</option>
+                            <option value="2" name="iki">2</option>
+                            <option value="3" name="uc">3</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Çocuk (4-12) : </td>
+                    <td>
+                        <select name="çocuk" id="">
+                            <option value="0" name="sıfır" selected>0</option>
+                            <option value="1" name="bir">1</option>
+                            <option value="2" name="iki">2</option>
+                            <option value="3" name="uc">3</option>
+                        </select>
+                    </td>
+
+
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <hr />
+                    </td>
+                </tr>
+                <tr>
+                    <td> Check-in : </td>
+                    <td>Check-out : </td>
+
+                </tr>
+                <tr>
+                    <td><input type="date" name="cin"> </td>
+                    <td><input type="date" name="cout"> </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <hr />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Promosyon :
+                    </td>
+                    <td>
+                        <input type="text" name="promo">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <hr />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: right">
+                        <input type="submit" value="Submit" name="submit">
+                    </td>
+                </tr>
+            </table>
+
+        </fieldset>
+
+    </form>
+</body>
+
+</html>
